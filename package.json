@@ -17,7 +17,7 @@
   "dev": "vite",
   
     
-  "build": "npm run build && export -o dist",
+  "predeploy": "npm run build && export -o dist",
   
     
   "deploy": "gh-pages -d build",
