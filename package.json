@@ -17,11 +17,11 @@
   "dev": "vite",
   
     
-  "build": "npm run build && export -o dist",
+  "predeploy": "npm run build ",
   
     
   "deploy": "gh-pages -d build",
-  
+  "build": "vite build",
     
   
   
