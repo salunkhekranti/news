@@ -1,8 +1,7 @@
-import React from 'react';
-import './App.css'
 import { Route,Routes } from 'react-router-dom';
 import BlogPostList from './components/BlogPostList';
 import BlogPostDetails from './components/BlogPostDetails';
+import './App.css'
 
 
 const App = () => {

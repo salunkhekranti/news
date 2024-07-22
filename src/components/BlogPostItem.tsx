@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
 import '../styles.css';
 
-const BlogPostItem = ({ post }) => {
+const BlogPostItem = ({ post }:any) => {
     return (
         <Grid item xs={12} sm={6} md={4}>
             <Card className="card">

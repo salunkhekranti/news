@@ -6,12 +6,12 @@ import '../styles.css';
 
 const BlogPostDetails = () => {
     const { title } = useParams();
-    const [post, setPost] = useState(null);
+    const [post, setPost] = useState<any>(null);
     const navigate = useNavigate();
 
     useEffect(() => {
         axios
-            .get(`https://newsapi.org/v2/everything?q=${decodeURIComponent(title)}&apiKey=5abe02d0ed6341008b1e6e45438eaef5`)
+            .get(`https://newsapi.org/v2/everything?q=${decodeURIComponent(title as string)}&apiKey=5abe02d0ed6341008b1e6e45438eaef5`)
             .then(response => {
                 setPost(response.data.articles[0]);
                 console.log(response)
